@@ -197,9 +197,9 @@ User Activity → Content Script → Service Worker → Chrome Storage → UI
 
 ## Author
 
-Aditya Nanda
-[LinkedIn](https://linkedin.com/in/aditya-nanda-8b0325252)
-[Email](mailto:a.nanda@iitg.ac.in)
+Anudhi Mishra
+[LinkedIn](https://www.linkedin.com/in/anudhi-mishra-505a24262/)
+[Email](mailto:anudhimishra0@gmail.com)
 
 ## License
 
