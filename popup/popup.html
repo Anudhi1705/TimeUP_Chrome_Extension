@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeUP Dashboard</title>
+    <!-- <link rel="stylesheet" href="../styles/minimal.css" /> -->
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <!-- Header -->
+      <header class="popup-header">
+        <div class="header-content">
+          <h1 class="app-title">
+            <span class="app-icon">⏱️</span>
+            <span>TimeUP</span>
+          </h1>
+          <div class="current-datetime" id="currentDateTime"></div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="popup-content">
+        <!-- Current Session Card -->
+        <div class="card" id="currentSessionCard">
+          <h2 class="card-title">Current Session</h2>
+          <div id="currentSession" class="current-session-content">
+            <div class="loading-state">
+              <div class="spinner"></div>
+              <span>Loading...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Today's Stats Card -->
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Today's Activity</h2>
+            <div class="total-time" id="totalTimeToday">--</div>
+          </div>
+          <div id="topSitesToday" class="sites-list">
+            <!-- Sites will be populated here -->
+          </div>
+        </div>
+
+        <!-- Update the quick add limit section -->
+        <div class="card">
+          <h3 class="card-title">Quick Add Limit</h3>
+          <div class="quick-limit-form">
+            <input
+              type="text"
+              id="quickDomain"
+              placeholder="youtube.com"
+              class="input input-domain"
+              autocomplete="off"
+              spellcheck="false"
+              title="Enter domain name (e.g., youtube.com)"
+            />
+            <input
+              type="number"
+              id="quickLimit"
+              placeholder="30"
+              min="1"
+              max="1440"
+              class="input input-limit"
+              title="Daily limit in minutes (1-1440)"
+            />
+            <button
+              id="addLimitBtn"
+              class="btn btn-primary"
+              title="Add daily time limit"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer Navigation -->
+      <footer class="popup-footer">
+        <button id="settingsBtn" class="nav-btn">
+          <span class="nav-icon">⚙️</span>
+          <span>Settings</span>
+        </button>
+        <button id="reportBtn" class="nav-btn nav-btn-primary">
+          <span class="nav-icon">📊</span>
+          <span>Report</span>
+        </button>
+      </footer>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
